@@ -4,8 +4,8 @@ const context = tela.getContext("2d");
 
 
 let circulo = {
-	x: 250,
-	y: 250,
+	x: 306,
+	y: 210,
 	raio: 100,
 
 	inicio: 0,
@@ -20,11 +20,12 @@ function drawCircle(circle) {
 
 
 	context.beginPath();
-	context.strokeStyle = "red";
-	context.fillStyle = "blue";
+	context.strokeStyle = "salmon";
+	context.fillStyle = "orange";
 
 	context.arc(circle.x, circle.y, circle.raio, circle.inicio, circle.fim);
 
+	context.lineWidth = 20;
 	context.fill();
 	context.stroke();
 }
